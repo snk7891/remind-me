@@ -2,7 +2,7 @@ const chrono = require('chrono-node');
 const { exec } = require('child_process');
 const moment = require('moment');
 
-const parseRegex = /to (.*?) (in|at|tomorrow|next)/;
+const parseRegex = /to (.*?) (in |at |tomorrow|next)/;
 
 module.exports = function() {
   const toParse = process.argv.slice(2).join(' ');
